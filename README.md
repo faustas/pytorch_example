@@ -38,6 +38,7 @@ pip freeze > requirements.txt
 
 # Install for the project
 
+Activate the environment and install the packages.
 ```shell script
 pip install -r requirements.txt
 ```
