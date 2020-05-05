@@ -97,7 +97,15 @@ with torch.no_grad():
             class_correct[label] += c[i].item()
             class_total[label] += 1
 
-
 for i in range(10):
     print('Accuracy of %5s : %2d %%' % (
         classes[i], 100 * class_correct[i] / class_total[i]))
+
+import leather
+
+data = []
+for i in range(10):
+    data.append((100 * class_correct[i] / class_total[i], classes[i]))
+chart = leather.Chart('Bars')
+chart.add_bars(data)
+chart.to_svg('examples/charts/bars.svg')
