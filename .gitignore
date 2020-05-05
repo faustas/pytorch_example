@@ -133,6 +133,8 @@ dmypy.json
 *.ipr
 *.iws
 .idea/
+data
+
 # Logfiles and rotated logfiles.
 *.log
 *.log.[0-9]*
