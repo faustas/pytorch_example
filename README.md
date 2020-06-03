@@ -36,6 +36,16 @@ deactivate
 pip freeze > requirements.txt
 ``` 
 
+## Check for packages that are outdated
+```shell script
+pip list --outdated
+```
+
+## Upgrade a package
+```shell script
+pip install PACKAGE_NAME --upgrade
+```
+
 # Install for the project
 
 Activate the environment and install the packages.
